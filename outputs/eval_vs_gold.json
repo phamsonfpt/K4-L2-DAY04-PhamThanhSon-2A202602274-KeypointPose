@@ -1,19 +1,16 @@
 {
   "summary": {
     "gold_people": 29,
-    "matched_people": 28,
-    "missing_people": 1,
+    "matched_people": 29,
+    "missing_people": 0,
     "extra_people": 0,
-    "mean_oks": 0.9099,
-    "oks50": 0.931,
-    "oks75": 0.931,
+    "mean_oks": 0.9313,
+    "oks50": 1.0,
+    "oks75": 1.0,
     "findings": {
-      "gold_khong_gan_nhan": 64,
-      "co_khac_gold": 48,
-      "lech_nhe": 17,
-      "dao_trai_phai": 1,
-      "truot_han": 1,
-      "thieu_nguoi": 1
+      "gold_khong_gan_nhan": 70,
+      "co_khac_gold": 53,
+      "lech_nhe": 10
     }
   },
   "per_image": [
@@ -468,24 +465,13 @@
         {
           "gold_person": 1,
           "your_person": 1,
-          "oks": 0.2142,
+          "oks": 0.9751,
           "findings": [
-            {
-              "type": "dao_trai_phai",
-              "label": "Đảo trái/phải",
-              "detail": "Đổi lại toàn bộ cặp trái/phải cho skeleton này thì OKS tăng hẳn."
-            },
             {
               "type": "gold_khong_gan_nhan",
               "label": "Gold không gán khớp này",
               "keypoint": "nose",
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "left_eye",
-              "detail": "Lệch 15 px = 1.7 lần bán kính dung sai. Sửa được, ít hại."
             },
             {
               "type": "gold_khong_gan_nhan",
@@ -494,34 +480,10 @@
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             },
             {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "left_ear",
-              "detail": "Lệch 19 px = 1.5 lần bán kính dung sai. Sửa được, ít hại."
-            },
-            {
               "type": "gold_khong_gan_nhan",
               "label": "Gold không gán khớp này",
               "keypoint": "right_ear",
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "left_shoulder",
-              "detail": "Lệch 57 px = 2.0 lần bán kính dung sai. Sửa được, ít hại."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "right_shoulder",
-              "detail": "Lệch 46 px = 1.6 lần bán kính dung sai. Sửa được, ít hại."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "left_elbow",
-              "detail": "Lệch 76 px = 2.9 lần bán kính dung sai. Sửa được, ít hại."
             },
             {
               "type": "gold_khong_gan_nhan",
@@ -530,10 +492,10 @@
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             },
             {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
               "keypoint": "left_wrist",
-              "detail": "Lệch 38 px = 1.7 lần bán kính dung sai. Sửa được, ít hại."
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             },
             {
               "type": "gold_khong_gan_nhan",
@@ -542,34 +504,16 @@
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             },
             {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
               "keypoint": "left_hip",
-              "detail": "Lệch 50 px = 1.3 lần bán kính dung sai. Sửa được, ít hại."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "right_hip",
-              "detail": "Lệch 46 px = 1.2 lần bán kính dung sai. Sửa được, ít hại."
-            },
-            {
-              "type": "lech_nhe",
-              "label": "Lệch nhẹ",
-              "keypoint": "left_knee",
-              "detail": "Lệch 85 px = 2.7 lần bán kính dung sai. Sửa được, ít hại."
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
             },
             {
               "type": "gold_khong_gan_nhan",
               "label": "Gold không gán khớp này",
               "keypoint": "right_knee",
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
-            },
-            {
-              "type": "truot_han",
-              "label": "Trượt hẳn",
-              "keypoint": "left_ankle",
-              "detail": "Lệch 106 px = 3.3 lần bán kính dung sai của khớp này."
             },
             {
               "type": "gold_khong_gan_nhan",
@@ -665,6 +609,79 @@
       "image": "train_13.jpg",
       "matches": [
         {
+          "gold_person": 1,
+          "your_person": 3,
+          "oks": 0.7711,
+          "findings": [
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "nose",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "right_eye",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_ear",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "right_ear",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "left_shoulder",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_elbow",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "gold_khong_gan_nhan",
+              "label": "Gold không gán khớp này",
+              "keypoint": "left_wrist",
+              "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
+            },
+            {
+              "type": "co_khac_gold",
+              "label": "Cờ khác gold",
+              "keypoint": "left_hip",
+              "detail": "Vị trí đúng nhưng bạn ghi v=1, gold ghi v=2. Không trừ điểm OKS - nhưng nếu lệch hàng loạt thì guideline chưa thống nhất."
+            },
+            {
+              "type": "lech_nhe",
+              "label": "Lệch nhẹ",
+              "keypoint": "left_ankle",
+              "detail": "Lệch 24 px = 1.4 lần bán kính dung sai. Sửa được, ít hại."
+            },
+            {
+              "type": "lech_nhe",
+              "label": "Lệch nhẹ",
+              "keypoint": "right_ankle",
+              "detail": "Lệch 19 px = 1.1 lần bán kính dung sai. Sửa được, ít hại."
+            }
+          ]
+        },
+        {
           "gold_person": 2,
           "your_person": 2,
           "oks": 0.8723,
@@ -707,21 +724,9 @@
               "detail": "Không bị trừ điểm: khớp gold có v=0 bị loại khỏi OKS. Xem mục lưu ý trong README."
             }
           ]
-        },
-        {
-          "gold_person": 1,
-          "your_person": null,
-          "oks": 0.0,
-          "findings": [
-            {
-              "type": "thieu_nguoi",
-              "label": "Thiếu hẳn một người",
-              "detail": "Gold có skeleton này, bài của bạn không có."
-            }
-          ]
         }
       ],
-      "missing": 1,
+      "missing": 0,
       "extra": 0
     },
     {
@@ -1048,7 +1053,7 @@
       "matches": [
         {
           "gold_person": 1,
-          "your_person": 1,
+          "your_person": 2,
           "oks": 0.9546,
           "findings": [
             {
@@ -1067,7 +1072,7 @@
         },
         {
           "gold_person": 2,
-          "your_person": 2,
+          "your_person": 1,
           "oks": 0.9675,
           "findings": [
             {

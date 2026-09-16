@@ -28,12 +28,12 @@ khó xác định mà vì chúng thật sự không quan sát được trong ả
 
 | Chỉ số | Trước rework | Sau rework |
 | --- | ---: | ---: |
-| OKS trung bình | 0.910 | |
-| OKS@0.50 | 0.931 | |
-| OKS@0.75 | 0.931 | |
-| Lỗi `dao_trai_phai` | 1 | |
-| Lỗi `nham_nguoi` | 0 | |
-| Lỗi `xoa_khop_bi_che` | 0 | |
+| OKS trung bình | 0.910 | 0.931 |
+| OKS@0.50 | 0.931 | 1.000 |
+| OKS@0.75 | 0.931 | 1.000 |
+| Lỗi `dao_trai_phai` | 1 | 0 |
+| Lỗi `nham_nguoi` | 0 | 0 |
+| Lỗi `xoa_khop_bi_che` | 0 | 0 |
 
 **Tôi đã sửa gì giữa hai lần chạy** (ghi cụ thể: ảnh nào, người thứ mấy, khớp nào):
 
